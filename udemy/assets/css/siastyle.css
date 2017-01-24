@@ -1,0 +1,184 @@
+@import url(http://fonts.googleapis.com/css?family=Rock+Salt);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+body {
+  background: #000;
+}
+
+
+.navbar{
+  background-color: #000;
+  font-family: 'Rock Salt', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  letter-spacing: 4px;
+  opacity:0.9;
+  text-decoration: none;
+
+}
+
+.navbar a:focus{
+  outline: none;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+
+
+
+
+.container {
+    padding: 80px 120px;
+    background: #000;
+    color: #fff;
+}
+
+
+h3 {
+  font: 400 65px/1.6 'Rock Salt', cursive;
+}
+
+h4 {
+  font: 400 35px/1.6 'Rock Salt', cursive;
+}
+
+
+p {
+  font: 400 16px/1.6 'Vollkorn', Verdana, Helvetica, sans-serif;
+}
+
+span {
+  margin: 5px;
+}
+
+.carousel-inner img {
+    min-width:60%;
+    height: 500px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.carousel-caption h3 {
+    color: #fff !important;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 800 pixels wide */
+    }
+}
+
+
+#padabout{
+  padding: 200px;
+}
+
+
+.about-img {
+  width: 360px;
+  height: 200px;
+  margin: 100px 0 0 0;
+}
+
+.about-img-long{
+  width: 355px;
+  height: 200px;
+  margin: 5px;
+}
+
+
+#partists {
+  margin: 0 0 10px 0;
+}
+#artists {
+  margin: 0 0 300px 0;
+}
+
+
+#preleases {
+  margin: 0 0 50px 0;
+}
+
+#releases {
+  background: #e71717;
+  padding: 0px;
+
+}
+
+
+
+
+
+
+.well {
+  background: #070707;
+  padding: 50px 0 10px 0;
+}
+
+.contactsia{
+  font-size: 27px;
+}
+
+.socialimage {
+  border-radius: 100%;
+  margin: 40px 30px 40px 30px;
+}
+
+
+.social {
+  background: black;
+  text-decoration: none;
+  margin: 40px 30px 40px 30px;
+}
+
+.social:active,
+.social:focus,
+.social:focus:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+
+
+#map {
+ width: 100%;
+ height: 400px;
+}
+
+footer {
+    background-color: black;
+    color: #f5f5f5;
+    padding: 10px;
+}
+
+footer p {
+    color: #f5f5f5;
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}

@@ -12,3 +12,9 @@
 * In order to be able to access scripts and styles, the action hook *wp_enqueue_scripts* is added with *add_action* in *functions.php*. It is calling the function *lsu_enqueue*.
 * Create the folders *includes/front/* and the file *includes/front/enqueue.php*, where the function *lsu_enqueue* will be defined.
 * Include *enqueue.php* in *functions.php*. Use *get_template_directory* to get the correct path.
+
+## 0.0.204 Register and enqueue styles
+* Create an *assets* folder which may contain html templates, styles, scripts etc.
+* In *lsu_enqueue* register the used styles with *wp_register_style*.
+* Make the styles loadable by enqueueing them with *wp_enqueue_style*.
+* Declare the spot for the styles to be enqueued by using the *wp_head()* function inside *index.php*.
