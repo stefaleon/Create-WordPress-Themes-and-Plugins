@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">  
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 
 </head>
 <body>
@@ -246,13 +246,9 @@
 
 
 
+<?php wp_footer(); ?>
 
 
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="js/index.js"></script>
 </body>
 </html>
