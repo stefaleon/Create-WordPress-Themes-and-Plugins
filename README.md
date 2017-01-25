@@ -35,3 +35,8 @@
 * In *functions.php* add an action that calls the hook *after_setup_theme* which calls the function *lsu_setup_theme*.
 * In *index.php* use *wp_nav_menu* in the desired position. Configure the parameter array depending on the html code used. For use with bootstrap, the *container* is set to false and *menu_class* is set to the relevant classes, for instance *nav* and *navbar-nav*.
 * The menu can be displayed in the website after it is added and configured via the Dashboard.
+
+## 0.0.209 Header and Footer
+* Create the *header.php* and *footer.php* files.
+* Copy the related content from *index.php* and add *get_header()* and *get_footer()* respectively in its place.
+
