@@ -25,3 +25,13 @@
 * In *lsu_enqueue* register the not bundled and the custom scripts with *wp_register_script*. The fifth parameter is set to true so that the scripts are loaded in the footer area, in the end if the html code.
 * In *lsu_enqueue* use *wp_enqueue_script* to enqueue bundled scripts, such as jQuery with the handle *jquery*.
 * Enqueue the rest of the registered scripts with their assigned handles.
+
+## 0.0.207 Add menu support
+* Add the function *add_theme_support()* with the *'menus'* parameter in *functions.php*.
+
+## 0.0.208 Display menus
+* In the *includes* folder create the file *setup.php*. Create the *lsu_setup_theme* function wherein the primary navigation menu will be registered with *register_nav_menu*, with the *primary* location and the description *Primary Menu*. The double underscore function is used for translating purposes in the text domain of the theme.
+* Include *setup.php* in *functions.php*.
+* In *functions.php* add an action that calls the hook *after_setup_theme* which calls the function *lsu_setup_theme*.
+* In *index.php* use *wp_nav_menu* in the desired position. Configure the parameter array depending on the html code used. For use with bootstrap, the *container* is set to false and *menu_class* is set to the relevant classes, for instance *nav* and *navbar-nav*.
+* The menu can be displayed in the website after it is added and configured via the Dashboard.

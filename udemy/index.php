@@ -23,6 +23,15 @@
           <span class="icon-bar"></span>
         </button>
       <div class="collapse navbar-collapse" id="myNavbar">
+
+          <?php
+          wp_nav_menu(array(
+              'theme_location'  => 'primary',
+              'container'       => false,
+              'menu_class'      => 'nav navbar-nav'
+          ));
+          ?>          
+
         <ul class="nav navbar-nav ">
           <li><a href="#about">About</a></li>
           <li><a href="#partists">Artists</a></li>
