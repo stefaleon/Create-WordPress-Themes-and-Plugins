@@ -2,6 +2,21 @@
 
 
 
+<div class="container text-center" id="sidebar">
+    <div class="row">
+        <div class="col-sm-8 col-xs-12">
+            <p>Two column segment, sidebar in the second column.</p>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+
+            <?php get_sidebar() ?>
+
+        </div>
+    </div>
+</div>
+
+
+
 
   <div class="container text-center" id="about">
 

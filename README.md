@@ -40,3 +40,13 @@
 * Create the *header.php* and *footer.php* files.
 * Copy the related content from *index.php* and add *get_header()* and *get_footer()* respectively in its place.
 
+## 0.0.210 Widget areas
+* In *functions.php* add the *widgets_init* hook calling the *lsu_widgets* function.
+* In the *includes/front* folder create the file *widgets.php* and define the *lsu_widgets* function.
+* Include *widgets.php* in *functions.php*.
+* In *lsu_widgets* call *register_sidebar*.  
+* Create the *sidebar.php* file, check with *is_active_sidebar()* and call *dynamic_sidebar()*.
+* Call the *get_sidebar()* function in the html portion where we want it displayed.
+
+## 0.0.211 Format sidebars
+* In *register_sidebar()* set the *before_widget* key's value to include placeholders such as *%1$s* and *%2$s* so that other widgets might add own classes there. Format the rest of the keys' values with opening and closing tags relative to the html content.
