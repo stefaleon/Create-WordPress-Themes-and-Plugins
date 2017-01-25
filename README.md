@@ -49,4 +49,13 @@
 * Call the *get_sidebar()* function in the html portion where we want it displayed.
 
 ## 0.0.211 Format sidebars
-* In *register_sidebar()* set the *before_widget* key's value to include placeholders such as *%1$s* and *%2$s* so that other widgets might add own classes there. Format the rest of the keys' values with opening and closing tags relative to the html content.
+* In *register_sidebar()* set the *before_widget* key's value to include placeholders such as *%1$s* and *%2$s* so that other widgets might add own classes there.
+* Format the rest of the keys' values with opening and closing tags relative to the html content.
+
+## 0.0.212 Format the search form
+* Create *searchform.php*.
+* Set *method* to *get*, *id* and *class* to *searchform*.
+* Set *action* to the homepage url with *home_url*.
+* Set *name* *'s'* to correspond to the loop.
+* Set *id* to *search*.
+* Set value to the return of the *the_search_query* function.
