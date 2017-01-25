@@ -59,3 +59,14 @@
 * Set *name* *'s'* to correspond to the loop.
 * Set *id* to *search*.
 * Set value to the return of the *the_search_query* function.
+
+## 0.0.213 The Loop
+* In *functions.php* add support for post thumbnails with *add_theme_support*.
+* In *index.php* create the WordPress Loop, using *have_posts()* for checking and looping.
+* Use *the_post()* to query the database and get the current post in the loop.
+
+## 0.0.214 Template Tags in the Loop
+* Use template tags such as *the_title()*, *the_permalink()*, *the_time()*, *the_category()*, *the_tags()*, *the_post_thumbnail()*, *the_content()* to provide wanted outputs.
+
+## 0.0.214.1 Get the theme images' paths
+* In the *src="* portion of the images tags, use *bloginfo('template_url')* in order to access the URL of the active theme’s directory properly and get the correct path to the theme's images.

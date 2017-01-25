@@ -1,12 +1,39 @@
 <?php get_header() ?>
 
 
-
 <div class="container text-center" id="sidebar">
     <div class="row">
-        <div class="col-sm-8 col-xs-12">
-            <p>Two column segment, sidebar in the second column.</p>
+        <p>Two column segment, sidebar in the second column.</p>
+
+        <div class="col-xs-12 col-sm-8">
+                <?php
+                if(have_posts()):
+                        while(have_posts()): the_post(); ?>
+
+
+                            <a href="<?php the_permalink(); ?>">
+                                <?php the_title( '<p>', '</p>' ); ?>
+                            </a>
+                            <small>
+                                Posted on: <?php the_time('F j, Y'); ?>
+                                at <?php the_time('g:i a'); ?>,
+                                <br />
+                                in <?php the_category( ' ' ); ?>
+                                <br />
+                                <?php the_tags(); ?>
+                            </small>
+                            <?php  the_post_thumbnail('thumbnail', array(
+                                'class' => 'img-responsive'
+                                ));
+                            ?>
+                            <?php the_content(); ?>
+                            <hr />
+
+                    <?php endwhile;
+                endif;
+                ?>
         </div>
+
         <div class="col-sm-4 col-xs-12">
 
             <?php get_sidebar() ?>
@@ -22,7 +49,7 @@
 
     <div class="row">
       <div class="col-lg-12">
-        <img class="about-img img-responsive" src="images/siabottle360x200.jpg" alt="sialogo">
+        <img class="about-img img-responsive" src="<?php bloginfo('template_url'); ?>/assets/images/siabottle360x200.jpg" alt="sialogo">
       </div>
       <h3>Records</h3>
       <br />
@@ -31,7 +58,7 @@
     <div id="padabout"> </div>
     <div class="row">
       <div class="col-md-12">
-        <img class="about-img-long img-responsive img-thumbnail" src="images/haroscar-small.jpg" alt="sialogo">
+        <img class="about-img-long img-responsive img-thumbnail" src="<?php bloginfo('template_url'); ?>/assets/images/haroscar-small.jpg" alt="sialogo">
 
       </div>
     </div>
@@ -58,7 +85,7 @@
        <!-- Wrapper for slides -->
        <div class="carousel-inner" role="listbox">
          <div class="item active">
-           <img src="./images/carvoodoohealers.jpg" alt="voodoo healers">
+           <img src="<?php bloginfo('template_url'); ?>/assets/images/carvoodoohealers.jpg" alt="voodoo healers">
            <div class="carousel-caption">
              <h3>Voodoo Healers</h3>
              <p></p>
@@ -66,7 +93,7 @@
          </div>
 
          <div class="item">
-           <img src="./images/carcavemanjoe.jpg" alt="caveman joe">
+           <img src="<?php bloginfo('template_url'); ?>/assets/images/carcavemanjoe.jpg" alt="caveman joe">
            <div class="carousel-caption">
              <h3>Caveman Joe</h3>
              <p></p>
@@ -74,7 +101,7 @@
          </div>
 
          <div class="item">
-           <img src="./images/cargreengoblins.jpg" alt="green goblins">
+           <img src="<?php bloginfo('template_url'); ?>/assets/images/cargreengoblins.jpg" alt="green goblins">
            <div class="carousel-caption">
              <h3>Green Goblins</h3>
              <p></p>
@@ -82,7 +109,7 @@
          </div>
 
          <div class="item">
-           <img src="./images/carloupgarou.jpg" alt="loup garou">
+           <img src="<?php bloginfo('template_url'); ?>/assets/images/carloupgarou.jpg" alt="loup garou">
            <div class="carousel-caption">
              <h3>Loup Garou</h3>
              <p></p>
@@ -90,7 +117,7 @@
          </div>
 
          <div class="item">
-           <img src="./images/carpersonalitycrisis.jpg" alt="personality crisis">
+           <img src="<?php bloginfo('template_url'); ?>/assets/images/carpersonalitycrisis.jpg" alt="personality crisis">
            <div class="carousel-caption">
              <h3>Personality Crisis</h3>
              <p></p>
@@ -98,7 +125,7 @@
          </div>
 
          <div class="item">
-           <img src="./images/carthehydes.jpg" alt="hydes">
+           <img src="<?php bloginfo('template_url'); ?>/assets/images/carthehydes.jpg" alt="hydes">
            <div class="carousel-caption">
              <h3>The Hydes</h3>
              <p></p>
@@ -124,7 +151,7 @@
    <div class="container text-center">
      <div class="row">
      <div class="col-md-12">
-       <img class="img-responsive img-thumbnail" src="images/sia-top-pic-small.jpg" alt="sialogo">
+       <img class="img-responsive img-thumbnail" src="<?php bloginfo('template_url'); ?>/assets/images/sia-top-pic-small.jpg" alt="sialogo">
      </div>
    </div> </div>
 
@@ -136,7 +163,7 @@
  <h3 class="text-center">Releases</h3>
 
      <a href="http://www.discogs.com/label/177326-Swallow-It-All-Records?sort=year&amp;sort_order=desc" target="_blank">
-      <img  class="img-responsive" src="./images/releases.jpg" alt="releases"  /></a>
+      <img  class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/images/releases.jpg" alt="releases"  /></a>
  </div>
 
 
