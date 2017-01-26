@@ -85,3 +85,11 @@
 * Paste the loop section from *index.php* and edit accordingly.
 * The *next_post_link()* and *previous_post_link()* functions are in this case positioned **inside** the loop. The placeholders *%link* and *%title* are used to fetch the relevant data.
 * Add the *edit_post_link* function which displays the *"Edit This"* link if an authorized user is logged in.
+
+## 0.0.218 Add the comments template
+* In *single.php* call *comments_template()*.
+* Create *comments.php*.
+* Comments are by default enabled for each post. To prevent the comments form from displaying they have to be disabled on post creation via the *discussions* panel (made visible via the *Screen Options* tab).
+* If *comments_open()* function is set to true, present the existing comments with a *foreach* loop that calls *comment_author_url()*, *comment_author()*, *comment_date()* and *comment_text()*.
+* Create a form that receives new comments and set the action to *echo site_url('wp-comments-post.php')* with a *post* method. Create the appropriate input fields. With a hidden input utilising *echo $post->ID* the current post in the Loop is defined.
+* Comments approval requirements are defined via the *Dashboard-Settings-Discussion* options.

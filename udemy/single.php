@@ -11,7 +11,7 @@
 
 
                             <a href="<?php the_permalink(); ?>">
-                                <?php the_title( '<p>', '</p>' ); ?>
+                                <?php the_title( '<h3>', '</h3>' ); ?>
                             </a>
                             <small>
                                 Posted on: <?php the_time('F j, Y'); ?>
@@ -25,11 +25,18 @@
                                 'class' => 'img-responsive'
                                 ));
                             ?>
+                            <h4>
+                                 <?php edit_post_link(); ?>
+                            </h4>
                             <?php the_content(); ?>
+
                             <hr />
 
                             <div class="nav-previous alignleft"><?php next_post_link( '%link','Next Post: %title ' ); ?></div>
                             <div class="nav-next alignright"><?php previous_post_link( '%link','Previous Post: %title' ); ?></div>
+
+                            <hr />
+                            <?php comments_template() ?>
 
                     <?php endwhile; ?>
 

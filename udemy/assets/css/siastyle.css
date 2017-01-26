@@ -10,7 +10,7 @@ body {
 
 .navbar{
   background-color: #000;
-  font-family: 'Rock Salt', Verdana, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 14px;
   letter-spacing: 4px;
   opacity:0.9;
@@ -42,49 +42,32 @@ body {
     color: #fff !important;
 }
 
-
-
-
-
 .container {
     padding: 80px 120px;
     background: #000;
     color: #fff;
 }
 
+.btneditcomment {
+    margin: 1em;
+}
+
 
 h3 {
-  font: 400 65px/1.6 'Rock Salt', cursive;
+  font: 400 35px/1.1  Helvetica, sans-serif;
 }
 
 h4 {
-  font: 400 35px/1.6 'Rock Salt', cursive;
+  font: 400 25px/1.1 Helvetica, sans-serif;
 }
 
 
 p {
-  font: 400 16px/1.6 'Vollkorn', Verdana, Helvetica, sans-serif;
+  font: 400 11px/1.1 Helvetica, sans-serif;
 }
 
 span {
   margin: 5px;
-}
-
-.carousel-inner img {
-    min-width:60%;
-    height: 500px;
-    margin: auto;
-    margin-top: 10px;
-}
-
-.carousel-caption h3 {
-    color: #fff !important;
-}
-
-@media (max-width: 600px) {
-    .carousel-caption {
-        display: none; /* Hide the carousel text when the screen is less than 800 pixels wide */
-    }
 }
 
 
