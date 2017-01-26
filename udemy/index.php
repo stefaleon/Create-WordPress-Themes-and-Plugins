@@ -29,9 +29,14 @@
                             <?php the_content(); ?>
                             <hr />
 
-                    <?php endwhile;
-                endif;
-                ?>
+                    <?php endwhile; ?>
+
+                    <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
+                    <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
+
+                <?php endif; ?>
+
+
         </div>
 
         <div class="col-sm-4 col-xs-12">

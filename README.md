@@ -70,3 +70,6 @@
 
 ## 0.0.214.1 Get the theme images' paths
 * In the *src="* portion of the images tags, use *bloginfo('template_url')* in order to access the URL of the active theme’s directory properly and get the correct path to the theme's images.
+
+## 0.0.215 Pagination
+* Right after the loop, use the *next_posts_link()* and *previous_posts_link()* functions to add pagination.

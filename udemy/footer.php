@@ -2,7 +2,7 @@
 
 <footer class="text-center">
   <a class="up-arrow" href="#about"  title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
+    <i class="fa fa-chevron-up"></i>
   </a><br><br>
   <p>2017 <a href="mailto:devsnsols@gmail.com" > devsNsols</a></p>
   <p>
