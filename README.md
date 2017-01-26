@@ -73,3 +73,15 @@
 
 ## 0.0.215 Pagination
 * Right after the loop, use the *next_posts_link()* and *previous_posts_link()* functions to add pagination.
+
+## 0.0.216 Template Hierarchy
+* To determine which template file to use, WordPress:
+    * Matches every query string to a query type to decide which page is being requested (for example, a search page, a category page, etc);
+    * Selects the template in the order determined by the template hierarchy;
+    * Looks for template files with specific names in the current theme’s directory and uses the first matching template file as specified by the hierarchy.
+
+## 0.0.217 Add the single post template
+* Create *single.php*.
+* Paste the loop section from *index.php* and edit accordingly.
+* The *next_post_link()* and *previous_post_link()* functions are in this case positioned **inside** the loop. The placeholders *%link* and *%title* are used to fetch the relevant data.
+* Add the *edit_post_link* function which displays the *"Edit This"* link if an authorized user is logged in.
