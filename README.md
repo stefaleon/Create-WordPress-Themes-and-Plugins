@@ -93,3 +93,7 @@
 * If *comments_open()* function is set to true, present the existing comments with a *foreach* loop that calls *comment_author_url()*, *comment_author()*, *comment_date()* and *comment_text()*.
 * Create a form that receives new comments and set the action to *echo site_url('wp-comments-post.php')* with a *post* method. Create the appropriate input fields. With a hidden input utilising *echo $post->ID* the current post in the Loop is defined.
 * Comments approval requirements are defined via the *Dashboard-Settings-Discussion* options.
+
+## 0.0.219 Add the page template
+* Create *page.php* for the theme's default page template.
+* Include the Loop and use the relevant functions to display what is required, e.g *the_title()*, *the_content()* etc.
