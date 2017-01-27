@@ -96,4 +96,15 @@
 
 ## 0.0.219 Add the page template
 * Create *page.php* for the theme's default page template.
-* Include the Loop and use the relevant functions to display what is required, e.g *the_title()*, *the_content()* etc.
+* Include the loop and use the relevant functions to display what is required, e.g *the_title()*, *the_content()* etc.
+
+## 0.0.220 Add the error page template
+* Create *404.php* for the theme's error page template.
+* Include an error message
+the loop and use the relevant functions to display what is required, e.g *the_title()*, *the_content()* etc.
+
+## 0.0.220.1 Refactor the comments template
+* Use the HTML5 *details* tag to hide/view the add comment form on demand.
+* Display the comments newer first by using *array_reverse* on the *$comments* array.
+* Display *comment_time()*.
+* Edit the style.
