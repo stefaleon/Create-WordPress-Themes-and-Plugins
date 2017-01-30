@@ -100,11 +100,20 @@
 
 ## 0.0.220 Add the error page template
 * Create *404.php* for the theme's error page template.
-* Include an error message
-the loop and use the relevant functions to display what is required, e.g *the_title()*, *the_content()* etc.
+* Display the 404 error message.
 
 ## 0.0.220.1 Refactor the comments template
 * Use the HTML5 *details* tag to hide/view the add comment form on demand.
 * Display the comments newer first by using *array_reverse* on the *$comments* array.
 * Display *comment_time()*.
 * Edit the style.
+
+## 0.0.221 Add the categories template
+* Create *category.php*.
+* Format it accordingly, a copy of *index.php* is suitable.
+* Now when a category is picked from the sidebar, the relevant posts are displayed.
+
+## 0.0.222 Add the search template
+* Create *search.php*.
+* In a copy of *index.php* use *get_search_form()* and *the_search_query()* in a formatted code snippet.
+* Now when a search is performed from the sidebar, the search page with the results is displayed with the search template view.

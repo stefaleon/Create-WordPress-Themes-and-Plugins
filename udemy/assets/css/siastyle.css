@@ -55,6 +55,19 @@ body {
     margin: 0 auto;
 }
 
+#sidebar li {
+    list-style-type: none;
+    margin-left: 1em;
+    text-align: left;
+}
+
+#search-form {
+
+    margin: auto;
+    width: 40%;
+    display: block;
+}
+
 
 h3 {
   font: 400 15px/1.1  Helvetica, sans-serif;

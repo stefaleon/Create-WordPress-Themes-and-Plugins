@@ -1,5 +1,10 @@
-<?php
+<div id="sidebar">
 
-if (is_active_sidebar('lsu_sidebar_id')) {
-    dynamic_sidebar('lsu_sidebar_id');
-}
+    <?php
+
+    if (is_active_sidebar('lsu_sidebar_id')) {
+        dynamic_sidebar('lsu_sidebar_id');
+    }
+    ?>
+
+</div>

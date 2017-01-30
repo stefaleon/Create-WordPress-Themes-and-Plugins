@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Create a WordPress Theme</title>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <?php wp_head();?>
+    </head>
 
-  <?php wp_head(); ?>
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-
-</head>
-<body>
-
+    <body>
 
 
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -31,15 +27,7 @@
               'menu_class'      => 'nav navbar-nav'
           ));
           ?>
-
-        <ul class="nav navbar-nav ">
-          <li><a href="#about">About</a></li>
-          <li><a href="#partists">Artists</a></li>
-          <li><a href="#preleases">Releases</a></li>
-          <li><a href="#contact">Contact</a></li>
-
-
-        </ul>
+        
       </div>
     </div>
   </nav>
