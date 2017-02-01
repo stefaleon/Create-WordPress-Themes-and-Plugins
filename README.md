@@ -81,7 +81,7 @@
     * Looks for template files with specific names in the current theme’s directory and uses the first matching template file as specified by the hierarchy.
 
 ## 0.0.217 Add the single post template
-* Create *single.php*.
+* Create the file *single.php*.
 * Paste the loop section from *index.php* and edit accordingly.
 * The *next_post_link()* and *previous_post_link()* functions are in this case positioned **inside** the loop. The placeholders *%link* and *%title* are used to fetch the relevant data.
 * Add the *edit_post_link* function which displays the *"Edit This"* link if an authorized user is logged in.
@@ -95,11 +95,11 @@
 * Comments approval requirements are defined via the *Dashboard-Settings-Discussion* options.
 
 ## 0.0.219 Add the page template
-* Create *page.php* for the theme's default page template.
+* Create the file *page.php* for the theme's default page template.
 * Include the loop and use the relevant functions to display what is required, e.g *the_title()*, *the_content()* etc.
 
 ## 0.0.220 Add the error page template
-* Create *404.php* for the theme's error page template.
+* Create the file *404.php* for the theme's error page template.
 * Display the 404 error message.
 
 ## 0.0.220.1 Refactor the comments template
@@ -109,11 +109,16 @@
 * Edit the style.
 
 ## 0.0.221 Add the categories template
-* Create *category.php*.
+* Create the file *category.php*.
 * Format it accordingly, a copy of *index.php* is suitable.
 * Now when a category is picked from the sidebar, the relevant posts are displayed.
 
 ## 0.0.222 Add the search template
-* Create *search.php*.
+* Create the file *search.php*.
 * In a copy of *index.php* use *get_search_form()* and *the_search_query()* in a formatted code snippet.
 * Now when a search is performed from the sidebar, the search page with the results is displayed with the search template view.
+
+## 0.0.223 Custom templates
+* Create the file *full-width-page.php*.
+* Copy and edit content from *page.php*. Remove the sidebar and edit the bootstrap class so that a full width page template remains.
+* Add a file header at the top, defining the *Template Name*.
