@@ -132,3 +132,8 @@
 * In *functions.php* add the *after_switch_theme* hook which calls the *lsu_activate* function.
 * Create the *activate.php* file in the *includes* folder. Include it in *functions.php*.
 * In *activate.php* use *version_compare* to check if WordPress version is at least 4.2. The current WordPress version is return with *get_bloginfo('version')*.  
+
+## 0.0.303 Using the *Options API*
+* In *activate.php* create the *$theme_opts* variable and retrieve a value for it with *get_option('lsu_opts')*. The option *lsu_opts* does not exist at the time of the first activation.
+* Create the *$opts* array which contains key-value pairs such as social network icons, logo type (1 for text, 2 for image), logo image and footer text.
+* Add the option using *add_option* with the *$opts* parameter.
