@@ -10,6 +10,7 @@
 
     <body>
 
+    <title><?php wp_title(); ?></title>
 
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -18,7 +19,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-      <div class="collapse navbar-collapse" id="myNavbar">
+        <a class="navbar-brand" href="#"><?php bloginfo('name'); ?></a>
+        <div class="collapse navbar-collapse" id="myNavbar">
 
           <?php
           wp_nav_menu(array(
@@ -27,7 +29,7 @@
               'menu_class'      => 'nav navbar-nav'
           ));
           ?>
-        
+
       </div>
     </div>
   </nav>

@@ -122,3 +122,8 @@
 * Create the file *full-width-page.php*.
 * Copy and edit content from *page.php*. Remove the sidebar and edit the bootstrap class so that a full width page template remains.
 * Add a file header at the top, defining the *Template Name*.
+
+## 0.0.224 Add dynamic title and text logo
+* In *functions.php* add theme support for the *title-tag*.
+* In *header.php* use *wp_title()*.
+* In the *navbar-brand* section use *bloginfo('name')* to display the site name.
