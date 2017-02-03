@@ -127,3 +127,8 @@
 * In *functions.php* add theme support for the *title-tag*.
 * In *header.php* use *wp_title()*.
 * In the *navbar-brand* section use *bloginfo('name')* to display the site name.
+
+## 0.0.302 Create default settings upon theme activation
+* In *functions.php* add the *after_switch_theme* hook which calls the *lsu_activate* function.
+* Create the *activate.php* file in the *includes* folder. Include it in *functions.php*.
+* In *activate.php* use *version_compare* to check if WordPress version is at least 4.2. The current WordPress version is return with *get_bloginfo('version')*.  
