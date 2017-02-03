@@ -131,9 +131,15 @@
 ## 0.0.302 Create default settings upon theme activation
 * In *functions.php* add the *after_switch_theme* hook which calls the *lsu_activate* function.
 * Create the *activate.php* file in the *includes* folder. Include it in *functions.php*.
-* In *activate.php* use *version_compare* to check if WordPress version is at least 4.2. The current WordPress version is return with *get_bloginfo('version')*.  
+* In *activate.php* use *version_compare* to check if WordPress version is at least 4.2. The current WordPress version is returned with *get_bloginfo('version')*.  
 
 ## 0.0.303 Using the *Options API*
 * In *activate.php* create the *$theme_opts* variable and retrieve a value for it with *get_option('lsu_opts')*. The option *lsu_opts* does not exist at the time of the first activation.
 * Create the *$opts* array which contains key-value pairs such as social network icons, logo type (1 for text, 2 for image), logo image and footer text.
 * Add the option using *add_option* with the *$opts* parameter.
+
+## 0.0.304 Add an admin menu page
+* In *functions.php* use the *admin_menu* hook which calls the *lsu_admin_menus* function.
+* In *includes* create the *admin* folder. In it create the *menus.php* file. Include it in *functions.php*.
+* In *lsu_admin_menus* use *add_menu_page* with the *Udemy Theme Options* page title, *Theme Options* menu title, *edit_theme_options* capability, *lsu_theme_opts* menu slug, and *lsu_theme_opts_page* callable function.
+* In the *admin* folder create the *options-page.php* file which contains the *lsu_theme_opts_page* callable function. This function uses the WordPress *wrap* class which places the page to the right of the menu and makes it responsive. Include it in *functions.php*.
