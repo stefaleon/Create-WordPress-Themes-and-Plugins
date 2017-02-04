@@ -142,4 +142,15 @@
 * In *functions.php* use the *admin_menu* hook which calls the *lsu_admin_menus* function.
 * In *includes* create the *admin* folder. In it create the *menus.php* file. Include it in *functions.php*.
 * In *lsu_admin_menus* use *add_menu_page* with the *Udemy Theme Options* page title, *Theme Options* menu title, *edit_theme_options* capability, *lsu_theme_opts* menu slug, and *lsu_theme_opts_page* callable function.
-* In the *admin* folder create the *options-page.php* file which contains the *lsu_theme_opts_page* callable function. This function uses the WordPress *wrap* class which places the page to the right of the menu and makes it responsive. Include it in *functions.php*.
+* In the *includes/admin* folder create the *options-page.php* file which contains the *lsu_theme_opts_page* callable function. This function uses the WordPress *wrap* class which places the page to the right of the menu and makes it responsive. Include it in *functions.php*.
+
+## 0.0.305 Enqueing styles and scripts in the admin
+* Initiate the admin dashboard with the *admin_init* hook which calls the *lsu_admin_init* function.
+* Create the *init.php* file in *includes/admin*. Include it in *functions.php*.
+* In *lsu_admin_init* use the *admin_enqueue_scripts* hook which calls the *lsu_admin_enqueue* function in order to enqueue files into the WordPress admin dashboard.
+* Create the *enqueue.php* file in *includes/admin*. Include it in *lsu_admin_init* inside *init.php*.
+* In *lsu_admin_enqueue* register the used styles with *wp_register_style*.
+* Make the styles loadable by enqueueing them with *wp_enqueue_style*.
+* Create the *assets/js/options.js* script and register it inside *lsu_admin_enqueue* with *wp_register_script*.
+* Enqueue it with *wp_enqueue_script*.  
+* Apply a conditional to ensure that these files are loaded only if we are entering the theme options page.
